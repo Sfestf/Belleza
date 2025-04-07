@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон краси "Belleza"</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f1f1;
+            color: #5a5a5a;
+            text-align: center;
+        }
+        header {
+            background-color: #ffe4e1;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 20px 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #d66b6b;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: all 0.3s;
+            border-radius: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #d66b6b;
+            color: white;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #ffe4e1;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 20px 20px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Контакти</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="contacts">
+        <h2>Зв'яжіться з нами</h2>
+        <p><strong>Адреса:</strong> вул. Київська, 10, м. Київ</p>
+        <p><strong>Телефон:</strong> +380 44 123 4567</p>
+        <p><strong>Email:</strong> info@belleza.com</p>
+        <h3>Години роботи</h3>
+        <p>Пн-Пт: 09:00 - 20:00</p>
+        <p>Сб-Нд: 10:00 - 18:00</p>
+        <h3>Ми на карті</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.935246377615!2d30.5234!3d50.4501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47200b9a3d10e4b9%3A0xa3b4c3a96dbb6455!2z0YPQuy4g0JrRg9C70LjRhtCwLCDQmtC40ZfQsiwg0KHQqNCQ!5e0!3m2!1suk!2sua!4v1649049054147!5m2!1suk!2sua" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+    
+    <footer>
+        <p>© 2025 Салон краси "Belleza". Всі права захищені.</p>
+    </footer>
+</body>
+</html>

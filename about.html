@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - Салон краси "Belleza"</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f1f1;
+            color: #5a5a5a;
+            text-align: center;
+        }
+        header {
+            background-color: #ffe4e1;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 20px 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #d66b6b;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: all 0.3s;
+            border-radius: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #d66b6b;
+            color: white;
+        }
+        .about {
+            padding: 20px;
+        }
+        .about img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .about img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #ffe4e1;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 20px 20px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Про нас</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="about">
+        <h2>Ласкаво просимо до "Belleza"</h2>
+        <p>Наш салон краси - це місце, де професіоналізм поєднується з турботою та комфортом. Ми пропонуємо широкий спектр послуг для догляду за волоссям, шкірою та нігтями, використовуючи лише найкращу косметику.</p>
+        <p>Наша команда досвідчених фахівців завжди готова допомогти вам виглядати та почуватися неперевершено. В "Belleza" кожен клієнт - це наша гордість і натхнення.</p>
+        <img src="1.jpg" alt="Інтер'єр салону" id="salonImage">
+    </section>
+    
+    <footer>
+        <p>Контакти: вул. Київська, 10, м. Київ</p>
+        <p>Телефон: +380 44 123 4567</p>
+        <p>Email: info@belleza.com</p>
+    </footer>
+    
+    <script>
+        document.getElementById("salonImage").addEventListener("click", function() {
+            alert("Ласкаво просимо до салону краси Belleza!");
+        });
+    </script>
+</body>
+</html>
